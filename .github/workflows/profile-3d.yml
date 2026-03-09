@@ -13,10 +13,11 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+      - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          YEAR: ${{ vars.YEAR || 2026 }} # Uses 2026 as current year or a repository variable if set
       - name: Commit & Push
         run: |
           git config user.name github-actions
