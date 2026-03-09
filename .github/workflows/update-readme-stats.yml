@@ -1,0 +1,36 @@
+name: Update Readme Stats
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Generate github-readme-stats
+        env:
+          PAT_1: ${{ secrets.PAT_STATISTICS }}
+        run: |
+          git clone https://github.com/anuraghazra/github-readme-stats.git src-stats
+          cd src-stats
+          npm ci
+          node express.js &
+          sleep 10 # Wait for server to start
+          curl -o ../github-metrics.svg "http://localhost:9000/api?username=${{ github.repository_owner }}&count_private=true&show_icons=true&theme=default"
+          curl -o ../github-top-langs.svg "http://localhost:9000/api/top-langs/?username=${{ github.repository_owner }}&layout=compact&theme=default"
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add github-metrics.svg github-top-langs.svg
+          git commit -m "chore: update github-readme-stats SVGs" || exit 0
+          git push
