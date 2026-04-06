@@ -17,7 +17,7 @@
 - ⚡ **Fun fact：** 我同时在写前端、后端、固件和法律文书 🤯
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=你好)](https://git.io/typing-svg)
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=+;还是不好？)](https://git.io/typing-svg)
+
 ![GitHub-Profile-3D-Contrib](https://github.com/ahaufox/ahaufox/raw/main/profile-3d-contrib/profile-gitblock.svg)
 
 ## 📊 GitHub Stats
