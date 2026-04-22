@@ -5,16 +5,27 @@
 - 🔭 **正在开发：**
   - [esp-spot](https://github.com/ahaufox/esp-spot) — 基于 ESP32-S3/C5 的 AI 语音交互智能硬件模块
   - [mcp-gateway](https://github.com/ahaufox/mcp-gateway) — MCP 协议企业级聚合网关（HTTP/SSE）
+  - [law_tech](https://github.com/ahaufox/law_tech) — 达申法律 AI 工作空间（FastAPI + LlamaIndex + 管理后台）
   - [chelaba](https://github.com/ahaufox/chelaba) — Google Analytics / Ads / Search Console 集成数据分析系统
 - 🌱 **正在深入探索：**
   - AI Agent 工程化落地（MCP 协议 + 工具编排）
   - 嵌入式 AI（ESP32 + 本地语音唤醒 + 端侧推理）
+  - 法律科技 LegalTech（RAG 检索 + 案情智能解析）
   - 商业哲思驱动的 AI 执行系统 (idea-info)
 - 🤝 **寻找协作的方向：**
-  - AI 赋能的 SaaS 工具（广告优化、数据分析）
+  - AI 赋能的 SaaS 工具（广告优化、数据分析、法律科技）
   - MCP 生态 / AI 工具链相关的开源项目
 - 💬 **欢迎聊聊：** AI 产品化落地 · ESP32 嵌入式开发 · Google 广告策略 · 育儿沟通
-- ⚡ **Fun fact：** 我同时在写前端、后端、固件和法律文书 🤯
+- ⚡ **Fun fact：** 我同时在写前端、后端、固件、法律文书和数据管道 🤯
+
+## 📦 数据与自动化项目
+
+> 以下为内部数据处理与自动化工具，持续迭代中。
+
+| 项目 | 说明 |
+|------|------|
+| **changma** | 长安马自达销售数据清洗与报表自动化（Python + SmartDataHub） |
+| **week_report** | 全链路周报生成系统（数据聚合 → LLM 洞察 → Markdown 报告） |
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=你好)](https://git.io/typing-svg)
 
