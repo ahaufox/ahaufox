@@ -3,10 +3,8 @@
 ## 🙋 About Me
 
 - 🔭 **正在开发：**
+  - [mcp-gateway](https://github.com/ahaufox/mcp-gateway) — MCP 协议企业级聚合网关，支持多 MCP Server 统一管理、HTTP/SSE 双协议接入、权限鉴权与请求路由分发
   - [esp-spot](https://github.com/ahaufox/esp-spot) — 基于 ESP32-S3/C5 的 AI 语音交互智能硬件模块
-  - [mcp-gateway](https://github.com/ahaufox/mcp-gateway) — MCP 协议企业级聚合网关（HTTP/SSE）
-  - [law_tech](https://github.com/ahaufox/law_tech) — 达申法律 AI 工作空间（FastAPI + LlamaIndex + 管理后台）
-  - [chelaba](https://github.com/ahaufox/chelaba) — Google Analytics / Ads / Search Console 集成数据分析系统
 - 🌱 **正在深入探索：**
   - AI Agent 工程化落地（MCP 协议 + 工具编排）
   - 嵌入式 AI（ESP32 + 本地语音唤醒 + 端侧推理）
