@@ -17,7 +17,7 @@ jobs:
       - name: Generate GitHub Stats SVG
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.PAT_STATISTICS }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: ${{ github.repository_owner }}
           filename: github-metrics.svg
           base: header, activity, community, repositories
@@ -29,7 +29,7 @@ jobs:
       - name: Generate Top Languages SVG
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.PAT_STATISTICS }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           user: ${{ github.repository_owner }}
           filename: github-top-langs.svg
           base: ""
