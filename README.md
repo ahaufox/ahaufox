@@ -3,7 +3,12 @@
 ## 🙋 About Me
 
 - 🔭 **正在开发：**
-  - [mcp-gateway](https://github.com/ahaufox/mcp-gateway) — MCP 协议企业级聚合网关，支持多 MCP Server 统一管理、HTTP/SSE 双协议接入、权限鉴权与请求路由分发
+  - [mcp-gateway](https://github.com/ahaufox/mcp-gateway) — 高性能 MCP 协议聚合网关（Go 实现）
+    - **核心能力：** 支持 SSE 与 Streamable HTTP 双传输协议，多 MCP Server 统一管理、权限鉴权与请求路由分发
+    - **服务集成：** 已接入 Douyin MCP（视频解析/无水印下载/AI 语音文案提取）、Jules MCP Server 等
+    - **运维监控：** 内置 Dashboard 实时健康状态监控，支持连接异常详情展示
+    - **控制台：** React 19 + TypeScript + Vite 构建的 SPA 管理后台，支持 Token 自动状态管理、配置转换器（含 Antigravity 格式）、全中文化界面与 Glassmorphism 深色美学设计
+    - **部署方案：** docker-compose 一键编排，内置健康检查与自动依赖启动，支持环境变量注入（AUTH_TOKENS / MCP_BASE_URL）敏感配置隔离
   - [esp-spot](https://github.com/ahaufox/esp-spot) — 基于 ESP32-S3/C5 的 AI 语音交互智能硬件模块
 - 🌱 **正在深入探索：**
   - AI Agent 工程化落地（MCP 协议 + 工具编排）
